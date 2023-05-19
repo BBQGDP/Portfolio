@@ -1,0 +1,196 @@
+:root {
+    padding: 0 2em;
+    font-size: 18px;
+
+}
+
+#body {
+    height: 100%;
+
+}
+
+#nav_menu ul {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    height: 60px;
+    text-align: center;
+    position: relative;
+
+}
+
+#nav_menu ul li {
+    color: white;
+    Width: 12.5%;
+    margin: 1em;
+    background-color: blue;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#nav_menu ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#nav_menu ul ul {
+    flex-direction: column;
+    padding: .2em 0 0 0;
+    height: 100px;
+    display: none;
+}
+
+#nav_menu ul li ul li {
+
+    position: relative;
+    text-align: center;
+    margin: 1px 0 0 0;
+    width: 95%;
+
+}
+
+#nav_menu ul li:hover>ul {
+    display: block;
+    /* margin: 0; */
+}
+
+img {
+    width: 20%;
+    margin: 5%;
+    height: 20%;
+    column-count: 3;
+    border-style: solid;
+}
+
+#intro {
+   
+    display: flex;
+    width: 90%;
+    column-gap: 10%;
+}
+#intro p {
+    text-indent: 0;
+}
+
+#comptia {
+    border-style: none;
+
+}
+
+
+section p {
+    border-style: solid;
+    background-color: white;
+    width: 45%;
+    padding: 0 2em;
+}
+
+#cover {
+
+    padding: 0 2em;
+    background-color: white;
+
+}
+
+
+
+#info {
+    text-align: center;
+    
+}
+
+.work ul h4 {
+    font-size: 21px;
+    margin-left: -3em;
+}
+.work ul h5 {
+    margin: 0 -1em;
+    font-size: 19px;
+}
+.work ul  {
+    padding-left: 5em;
+}
+
+p {
+    text-indent: 2em;
+}
+
+.pickleball {
+    display: flex;
+}
+
+.pickleball img {
+    width: 30%;
+}
+
+.pickleball p {
+    margin: 4em 0em 0 0;
+    border-style: none;
+    text-indent: 0em;
+}
+
+.dupr {
+    display: flex;
+}
+
+.dupr img {
+
+    width: 40%;
+}
+
+.skinny {
+
+    padding: 0em 5em;
+    margin: 0 2em;
+
+}
+.skinny p {
+padding: 0 2em;
+}
+.skinny h2 {
+    margin: 0 0 0 1.2em;
+}
+
+.skinny h3 {
+    margin: 0 0 0 1.2em;
+
+    padding: 0 0 0 35%;
+}
+.computer p {
+    border-style: none;
+    padding: 0 20% 0 20%;
+    text-align: center;
+
+}
+.computer ul li {
+    border-style: none;
+    padding: 0 36% 0 20%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.computer img {
+    height: 40%;
+    width: 70%;
+}
+.pictures {
+    display:flex;
+    flex-direction: row; 
+}
+.pictures p{
+ border-style: none;
+ text-indent: 0;
+}
+.pictures img {
+    width:20%;
+   
+}
+.contact  a{
+padding-left: 40%;
+border-style: none;
+}
+.bio p{
+    border-style: none;
+}
