@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Technology - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
 <body>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -29,16 +39,21 @@
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
-    <main class = "skinny">
-    <h3>Technology</h3>
-    <p>I try and stay with current technology trends. I am constantly listening to podcasts and have a newsletter that
-        gets sent to my inbox, courtesy of <a href="https://tldr.tech/ai">TLDR AI</a>.</p>
-    <p>I love gadgets in pretty much all forms, from smart watches and lamps, to <a
-            href="https://shop.hak5.org/products/usb-rubber-ducky">Rubber Ducky by Hak5</a></p>
-    <p>If there is something new out there, I want to be the first to hear about it and talk about it. I had a smart
-        phone in 2009, almost everyone around me thought it was silly back then. There were a few people impressed with
-        it, and the world came to see what was in the palm of our hands.</p>
-        </main>
+    <main class="skinny">
+        <h3>Technology</h3>
+        <p>I try and stay with current technology trends. I am constantly listening to podcasts and have a newsletter
+            that
+            gets sent to my inbox, courtesy of <a href="https://tldr.tech/ai">TLDR AI</a>.</p>
+        <p>I love gadgets in pretty much all forms, from smart watches and lamps, to <a
+                href="https://shop.hak5.org/products/usb-rubber-ducky">Rubber Ducky by Hak5</a></p>
+        <p>If there is something new out there, I want to be the first to hear about it and talk about it. I had a smart
+            phone in 2009, almost everyone around me thought it was silly back then. There were a few people impressed
+            with
+            it, and the world came to see what was in the palm of our hands.</p>
+    </main>
 </body>
+<footer>
+    &copy; Dean Perkins 2023
+</footer>
 
 </html>

@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
 <body>
-
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,49 +39,65 @@
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
-    <h2>Portfolio</h2>
-    <p>
-        In 2008, I was working as a Military Police officer in Korea. We had received a call of a domestic disturbance,
-        and
-        it was mine and my partner’s job to handle it in the most effective, yet compassionate way.
-        We communicated essential information with our RTO (Radio Telephone Operator) and arrived on the scene. The
-        absolute
-        first thing you do is separate the two parties, where they cannot visibly see each other, but you and your
-        partner
-        can see each other. This is important not only to help diffuse the situation but maintain control. We conducted
-        our
-        investigation according to Standards of Procedure, took copious notes throughout every stage, and acted in
-        accordance with policies. After we had completed our investigation, we returned to the station to fill out all
-        the
-        proper documents and turn over any evidence acquired from the investigation.</p>
-    <p>
-        In 2012, I gave my girlfriend (now ex-wife) her first laptop. With this new laptop, she started clicking all the
-        links, which led to a network infestation of malicious software.
-        One day I had noticed the network acting sluggish, but because of where we live, I assumed it was just
-        poor-quality
-        internet. The next day it got slower. The third day, my ex told me her laptop was acting funny. I asked her to
-        show
-        me, and to my surprise, it was almost non-functional. There were issues like the keyboard taking a few seconds
-        to
-        process every keystroke, the screen would randomly become pixelated, or artifact. I told her not to worry, and
-        that
-        I would fix it.</p>
-    <p>
-        I researched her history and saw a few websites that stood out. I backed up all her files and asked her if she
-        wanted anything in a specific place, like a folder on a USB drive to have ease of access to. After the backup
-        was
-        completed, I ran anti-virus software and used a program called DBAN to wipe her hard drive. Then I installed a
-        fresh
-        copy of Windows and made sure that worked properly. While I was performing the installation, I went into my
-        router
-        settings and started blacklisting the websites I found from her history. After the installation was completed, I
-        had
-        her create a new e-mail account, and set up junk folders for both of her e-mail accounts. I told her that her
-        first
-        e-mail was dead, and she could use that one to sign up for things online, but the new e-mail would be her
-        professional/personal e-mail.</p>
-    <p> This website can also be used as a running concept for my portfolio, as I coded this all.</p>
-
+    <main class="skinny">
+        <h2>Portfolio</h2>
+        <p>
+            In 2008, I was working as a Military Police officer in Korea. We had received a call of a domestic
+            disturbance,
+            and
+            it was mine and my partner’s job to handle it in the most effective, yet compassionate way.
+            We communicated essential information with our RTO (Radio Telephone Operator) and arrived on the scene. The
+            absolute
+            first thing you do is separate the two parties, where they cannot visibly see each other, but you and your
+            partner
+            can see each other. This is important not only to help diffuse the situation but maintain control. We
+            conducted
+            our
+            investigation according to Standards of Procedure, took copious notes throughout every stage, and acted in
+            accordance with policies. After we had completed our investigation, we returned to the station to fill out
+            all
+            the
+            proper documents and turn over any evidence acquired from the investigation.</p>
+        <p>
+            In 2012, I gave my girlfriend (now ex-wife) her first laptop. With this new laptop, she started clicking all
+            the
+            links, which led to a network infestation of malicious software.
+            One day I had noticed the network acting sluggish, but because of where we live, I assumed it was just
+            poor-quality
+            internet. The next day it got slower. The third day, my ex told me her laptop was acting funny. I asked her
+            to
+            show
+            me, and to my surprise, it was almost non-functional. There were issues like the keyboard taking a few
+            seconds
+            to
+            process every keystroke, the screen would randomly become pixelated, or artifact. I told her not to worry,
+            and
+            that
+            I would fix it.</p>
+        <p>
+            I researched her history and saw a few websites that stood out. I backed up all her files and asked her if
+            she
+            wanted anything in a specific place, like a folder on a USB drive to have ease of access to. After the
+            backup
+            was
+            completed, I ran anti-virus software and used a program called DBAN to wipe her hard drive. Then I installed
+            a
+            fresh
+            copy of Windows and made sure that worked properly. While I was performing the installation, I went into my
+            router
+            settings and started blacklisting the websites I found from her history. After the installation was
+            completed, I
+            had
+            her create a new e-mail account, and set up junk folders for both of her e-mail accounts. I told her that
+            her
+            first
+            e-mail was dead, and she could use that one to sign up for things online, but the new e-mail would be her
+            professional/personal e-mail.</p>
+        <p> This website can also be used as a running concept for my portfolio, as I coded this all.</p>
+    </main>
 </body>
+<footer>
+    &copy; Dean Perkins 2023
+</footer>
 
 </html>

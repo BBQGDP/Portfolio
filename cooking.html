@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooking - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
 <body>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,11 +40,16 @@
         </ul>
     </nav>
     <h3> A few meals I love making</h3>
-    <img src="images/Italian Chicken.jpg">
-    <img src="images/Firecracker.jpg">
-    <img src="images/Steak.jpg">
-    <img src="images/Sausage.jpg">
-    <img src="images/Burgers.jpg">
+    <section class="food">
+        <img src="images/Italian Chicken.jpg">
+        <img src="images/Firecracker.jpg">
+        <img src="images/Steak.jpg">
+        <img src="images/Sausage.jpg">
+        <img src="images/Burgers.jpg">
+    </section>
 </body>
+<footer>
+    &copy; Dean Perkins 2023
+</footer>
 
 </html>

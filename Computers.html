@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computers - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
 <body>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -38,8 +48,8 @@
                 GeForce 4. I wanted to have the latest and greatest, and learn how to use each piece. Of course,
                 technology has
                 grown at a ridiculous rate, but that hasn't stopped my desire.</p>
-            <p>My current setup:
-            <ul>
+
+            <ul>My current setup:
                 <li>GTX 4080</li>
                 <li>Ryzen 5 3600X</li>
                 <li>32GB DDR4 RAM</li>
@@ -48,13 +58,16 @@
                 <li>1TB SSD Storage</li>
                 <li>1TB HDD Storage</li>
 
+
             </ul>
-            </p>
             <img class="setup" src="images/setup.jpg">
 
         </section>
     </main>
 
 </body>
+<footer>
+    &copy; Dean Perkins 2023
+</footer>
 
 </html>

@@ -1,5 +1,5 @@
 :root {
-    padding: 0 2em;
+    /* padding: 0 2em; */
     font-size: 18px;
 
 }
@@ -14,8 +14,10 @@
     display: flex;
     color: white;
     height: 60px;
-    text-align: center;
     position: relative;
+    text-align: center;
+    max-height: 720px;
+    padding-left: 0em;
 
 }
 
@@ -53,7 +55,13 @@
 
 #nav_menu ul li:hover>ul {
     display: block;
-    /* margin: 0; */
+
+}
+
+.index {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
 }
 
 img {
@@ -65,20 +73,19 @@ img {
 }
 
 #intro {
-   
+
     display: flex;
     width: 90%;
     column-gap: 10%;
 }
+
 #intro p {
     text-indent: 0;
 }
 
 #comptia {
     border-style: none;
-
 }
-
 
 section p {
     border-style: solid;
@@ -94,22 +101,34 @@ section p {
 
 }
 
-
-
+.img {
+    display: flex;
+}
+.resume{
+    font-size: 10px;
+}
 #info {
     text-align: center;
-    
+    min-height: 245px;
+    max-height: 745px;
+
+}
+
+#info h3 {
+    min-height: 23px;
 }
 
 .work ul h4 {
     font-size: 21px;
     margin-left: -3em;
 }
+
 .work ul h5 {
     margin: 0 -1em;
     font-size: 19px;
 }
-.work ul  {
+
+.work ul {
     padding-left: 5em;
 }
 
@@ -119,16 +138,22 @@ p {
 
 .pickleball {
     display: flex;
+    align-items: flex-start;
 }
 
 .pickleball img {
     width: 30%;
+    min-width: 250px;
+    margin-left: .8em;
 }
 
 .pickleball p {
-    margin: 4em 0em 0 0;
+    margin: 5% 0em 0 0;
     border-style: none;
     text-indent: 0em;
+    max-height: 266px;
+
+
 }
 
 .dupr {
@@ -138,6 +163,8 @@ p {
 .dupr img {
 
     width: 40%;
+    min-height: 290px;
+    min-width: 400px;
 }
 
 .skinny {
@@ -146,9 +173,11 @@ p {
     margin: 0 2em;
 
 }
+
 .skinny p {
-padding: 0 2em;
+    padding: 0 2em;
 }
+
 .skinny h2 {
     margin: 0 0 0 1.2em;
 }
@@ -158,39 +187,249 @@ padding: 0 2em;
 
     padding: 0 0 0 35%;
 }
+
 .computer p {
     border-style: none;
-    padding: 0 20% 0 20%;
+    /* padding: 0% ; */
     text-align: center;
+    /* margin-right: 10%; */
+    width: 100%
+}
+
+.computer ul {
+
+    text-align: center;
+    padding: 0 20% 0 20%;
+}
+
+.computer ul li {
+    list-style-type: none;
+    border-style: none;
 
 }
-.computer ul li {
-    border-style: none;
-    padding: 0 36% 0 20%;
-    text-align: center;
-    list-style-type: none;
+
+.computer h3 {
+    padding-left: 30%;
+
 }
 
 .computer img {
-    height: 40%;
+    margin-left: 15%;
     width: 70%;
+    min-width: 465px;
 }
-.pictures {
-    display:flex;
-    flex-direction: row; 
-}
-.pictures p{
- border-style: none;
- text-indent: 0;
-}
-.pictures img {
-    width:20%;
-   
-}
-.contact  a{
-padding-left: 40%;
-border-style: none;
-}
-.bio p{
+
+.contact a {
+    padding-left: 40%;
     border-style: none;
+}
+
+.bio p {
+    border-style: none;
+    width: 100%;
+}
+
+footer {
+    text-align: right;
+}
+#mobile_menu {
+    display:none;
+}
+
+@media only screen and (max-width: 1209px) {
+    .pickleball p {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .dupr img {
+        margin: 1em;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .pickleball p {
+        font-size: 15px;
+        padding: 0;
+
+    }
+
+    .dupr img {
+        margin: .1em;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .pickleball p {
+        font-size: 14px;
+        padding: 0;
+    }
+
+    .dupr {
+        flex-direction: column;
+    }
+
+    .dupr img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .pickleball p {
+        font-size: 13px;
+        padding: 0;
+        max-width: 500px;
+    }
+
+    .skinny {
+        width: 80%
+    }
+
+    .dupr img {
+        margin: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 889px) {
+    .pickleball p {
+        font-size: 12px;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 813px) {
+    :root {
+        font-size: 16px;
+    }
+
+    #nav_menu ul li {
+        height: 37px;
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #nav_menu ul ul {
+        padding: 1.5em 0 0 0;
+    }
+
+    #nav_menu ul li ul li {
+        font-size: 12px;
+    }
+
+    .skinny {
+        padding: 0;
+    }
+
+    .pickleball p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 669px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .bio {
+        padding-right: 5%;
+    }
+
+    .skinny {
+        width: 100%;
+        margin: 0 0;
+    }
+
+    #nav_menu ul li ul li {
+        font-size: 11px;
+    }
+
+
+}
+
+@media only screen and (max-width: 584px) {
+    .img {
+        flex-flow: column;
+
+    }
+
+    .suit {
+        order: 2;
+        width: 95%;
+        margin: 1em 0;
+    }
+
+    .comptia {
+        order: 1;
+        width: 95%;
+        margin: 1em 0;
+    }
+
+    .MyComp {
+        order: 3;
+        width: 95%;
+        margin: 1em 0;
+    }
+
+    #intro {
+
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .me {
+        order: 4;
+        width: 78%;
+    }
+
+    .goal {
+        order: 5;
+        width: 78%;
+    }
+
+    .skinny {
+        margin: 0 0;
+        width: 100%;
+    }
+
+    .computer img {
+        min-width: 246px;
+    }
+
+    .food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food img {
+        width: 100%;
+    }
+
+    .pickleball {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .pickleball img {
+        order: 2;
+        width: 100%;
+        margin-left: 0em;
+    }
+
+    .pickleball p {
+        order: 1;
+        width: 100%;
+
+    }
+
+    .dupr img {
+        margin: 0em 1em 2em 0em;
+    }
+#nav_menu {
+    display:none;
+}
+#mobile_menu {
+    display:block;
+}
+    
 }

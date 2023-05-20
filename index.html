@@ -7,10 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
-
 <body>
+    <nav id="mobile_menu"></nav>
+
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -30,19 +40,24 @@
             <li><a href="contact.html">Contact Me</a></li>
         </ul>
     </nav>
-    <div class="img">
-        <img src="images/Dressed.jpg">
-        <img src="images/My Computer.jpg">
-        <img id="comptia" src="images/SecurityPlus Logo Certified CE.png">
-    </div>
-    <main>
-        <section id="intro">
-            <p>My name is Dean Perkins. I am a 36 year old man currently retraining to become a cyber security
-                professional.</p>
-            <p>My current goals are to get an associates degree in Cyber Security and get a few more certifications like
-                CISSP and CCSK.</p>
-        </section>
-    </main>
+
+    <section class="img">
+        <img class="suit" src="images/Dressed.jpg">
+        <img class="MyComp" src="images/My Computer.jpg">
+        <img class="comptia" src="images/SecurityPlus Logo Certified CE.png">
+    </section>
+
+    <section id="intro">
+        <p class="me">My name is Dean Perkins. I am a 36 year old man currently retraining to become a cyber security
+            professional.</p>
+        <p class="goal">My current goals are to get an associates degree in Cyber Security and get a few more
+            certifications like
+            CISSP and CCSK.</p>
+    </section>
+
+    <footer>
+        &copy; Dean Perkins 2023
+    </footer>
 </body>
 
 </html>

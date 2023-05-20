@@ -7,9 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pickleball - Dean Perkins</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
+        });
+
+    </script>
 </head>
 
 <body>
+    <nav id="mobile_menu"></nav>
     <nav id="nav_menu">
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -34,8 +44,11 @@
         <p>Pickleball is a great way for me to work out my energy and helps reinforce the mantra of being "1% better
             every
             day".</p>
+
         <section class="pickleball">
+
             <img src="images/Dinko De Mayo.jpg">
+
             <p>Here's a picture of me and my doubles partner at the most recent tournament we played in, on May 6th,
                 2023.
                 We've always wanted to push ourselves, so we started in the 3.5 bracket. This most recent tournament, we
@@ -51,10 +64,14 @@
                 community, and really learned what it takes to push myself further and further.</p>
         </section>
         <section class="dupr">
-            <img src="images/dupr.webp">
-            <img src="images/court.jpg">
+            <img class="rating" src="images/dupr.webp">
+            <img class="court" src="images/court.jpg">
+
         </section>
     </main>
 </body>
+<footer>
+    &copy; Dean Perkins 2023
+</footer>
 
 </html>
